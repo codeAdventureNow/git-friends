@@ -15,14 +15,14 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 4rem;
   margin-top: 10%;
   margin-bottom: 25px;
   text-align: center;
   color: #ff3f3f;
 }
 
-.friends {
+h1 span {
   color: white;
 }
 
@@ -40,10 +40,9 @@ h1 {
 
 #app {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* flex-wrap: wrap; */
-  margin-top: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5rem;
   gap: 1rem;
 }
 
@@ -55,7 +54,7 @@ h1 {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 12px;
+  font-size: 16px;
   border-radius: 10px;
   font-family: "Press Start 2P", sans-serif;
 }
@@ -68,9 +67,7 @@ h1 {
   color: black;
   border-radius: 20px;
   flex-basis: 40%;
-  max-width: 70%;
-  font-size: 12px;
-  margin: 0 20px;
+  max-width: 30%;
 }
 
 .user img {
@@ -87,29 +84,4 @@ input {
   height: 30px;
   border: none;
   border-radius: 10px;
-}
-
-@media (min-width: 768px) {
-  #app {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 3rem;
-    gap: 1rem;
-  }
-
-  .user {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #f3ea5f;
-    color: black;
-    border-radius: 20px;
-    flex-basis: 40%;
-    max-width: 30%;
-
-    font-size: 12px;
-  }
 }

@@ -1,0 +1,4 @@
+style 2 is holding the original css
+
+Design Cards to fit on Small screens
+How do I create the media query break points
