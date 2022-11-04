@@ -51,7 +51,7 @@ h1 {
   background-color: #f3ea5f;
   border: none;
   color: black;
-  padding: 15px 32px;
+  padding: 10px 28px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -87,9 +87,14 @@ input {
   height: 30px;
   border: none;
   border-radius: 10px;
+  padding: 7px;
 }
 
 @media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
   #app {
     display: flex;
     flex-direction: row;
@@ -111,5 +116,18 @@ input {
     max-width: 30%;
 
     font-size: 12px;
+  }
+
+  #fetchdata {
+    background-color: #f3ea5f;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 10px;
+    font-family: "Press Start 2P", sans-serif;
   }
 }
