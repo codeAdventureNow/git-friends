@@ -16,7 +16,7 @@ const createUserHTML = function (user) {
 };
 
 const renderUserFriends = function (data) {
-  const html = data.map((user) => createUserHTML(user));
+  const html = data.map((user) => createUserHTML(user)).join("");
   document.querySelector("#app").insertAdjacentHTML("beforeend", html);
 };
 
