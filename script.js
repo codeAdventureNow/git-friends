@@ -5,7 +5,13 @@ const renderError = function (msg) {
   document.querySelector("#app").insertAdjacentHTML("afterbegin", msg);
 };
 
+const removeUser = function () {
+  const user = document.querySelectorAll(".user");
+  user.forEach((user) => user.remove());
+};
+
 const createUserHTML = function (user) {
+  removeUser();
   return `
   <div class=user>
     <p><img src="${user.avatar_url}" alt="${user.name}"/></p>
